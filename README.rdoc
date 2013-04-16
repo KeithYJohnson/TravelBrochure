@@ -15,4 +15,7 @@ We're going to make a rails app that models a travel brochure. We've got control
 <%= link_to 'Map', "http://maps.google.com/?q=#{@attraction.latitude},#{@attraction.longitude}" %>
 
 * Add CSS to make it look funky.
+* Nest your attractions inside of destinations, so that I can visit
+
+    /destinations/london/attractions/1
 * Send me a pull request
