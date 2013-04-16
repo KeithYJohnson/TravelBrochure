@@ -1,0 +1,16 @@
+<h1><%= @destination.name %></h1>
+
+<h3>Attractions</h3>
+<% @destination.attractions.each do |a| %>
+  <div class="attraction">
+
+    <%= image_tag a.image_url %>
+
+    <h4><%= a.name %></h4>
+
+    <p>
+      <%= link_to "Map", "http://maps.google.com/?q=#{a.latitude},#{a.longitude}" %>
+    </p>
+
+  </div>
+<% end %>

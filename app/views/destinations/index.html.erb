@@ -1,0 +1,14 @@
+<h3>My Amazing Travel Brouchure</h3>
+
+
+<% @destinations.each do |d| %>
+
+<div class="destination" style="-webkit-transform:rotate(<%=rand(-45..45)%>deg);">
+
+  <%= link_to (image_tag d.image_url, :width => 300), destination_path(d) %>
+
+  <p><%= d.name %></p>
+
+</div>
+
+<% end %>
