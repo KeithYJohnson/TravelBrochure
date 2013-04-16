@@ -29,7 +29,7 @@ class AttractionsController < ApplicationController
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @attraction }
-    end
+    end 
   end
 
   # GET /attractions/1/edit
