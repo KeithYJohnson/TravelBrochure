@@ -23,6 +23,9 @@ end
 gem 'jquery-rails'
 
 gem 'geocoder'
+#ruby binding to an api, gigantic search engine
+#
+gem 'pry'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

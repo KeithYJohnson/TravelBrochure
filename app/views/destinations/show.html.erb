@@ -1,5 +1,18 @@
 <p id="notice"><%= notice %></p>
 
+<h1> <%= @destination.name %> </h1>
+
+<h3> Attractions </h3>
+
+<% @ destination.attractions.each do |a| %>
+	<div class="attraction">
+		<!-- What's inside this DIV should probably be inside a partial -->
+		<%= image_tag a.image_url %>
+		<h4><%= a.name %></h4>
+
+
+<% end %>
+
 
 <%= link_to 'Edit', edit_destination_path(@destination) %> |
 <%= link_to 'Back', destinations_path %>

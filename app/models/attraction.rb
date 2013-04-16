@@ -9,6 +9,7 @@ class Attraction < ActiveRecord::Base
   after_validation :geocode 
 
   def destination_and_attraction
+
     "#{destination.name} #{self.name}"
   end
 end
